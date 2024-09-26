@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Cédula</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header con título y descripción -->
+    <header>
+        <h1>VALIDADOR DE CÉDULA</h1>
+        <h3>Algoritmo del módulo 10, validar si una cédula es correcta</h3>
+    </header>
+    
+    <div class="login-background">
+        <div class="container">
+            <!-- Título dentro del contenedor -->
+            <h1>Formulario de Registro</h1>
+            
+            <form id="registroForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cedula">Cédula</label>
+                    <input type="text" id="cedula" name="cedula" required>
+                    <span id="cedulaError" class="error-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+
+                <!-- Botón de Registrar con efecto añadido -->
+                <button class="btn" type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
